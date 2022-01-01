@@ -12,3 +12,6 @@ console.log(animal.name);
 
 // animalのgreetプロパティの関数を実行してください
 animal.greet();
+
+// Animalクラスを定義してください
+class Animal{}
