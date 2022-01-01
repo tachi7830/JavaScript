@@ -24,3 +24,13 @@ const animal = new Animal();
 
 // 定数animalの値を出力してください
 console.log(animal);
+
+class Animal {
+  // コンストラクタを追加してください
+  constructor(){
+   console.log("インスタンスを生成しました"); 
+  }
+  
+}
+
+const animal = new Animal();
