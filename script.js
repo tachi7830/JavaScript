@@ -1,9 +1,5 @@
-const characters = ["にんじゃわんこ", "ベイビーわんこ", "ひつじ仙人"];
+const characters = ["にんじゃわんこ", "ベイビーわんこ", "ひつじ仙人", "とりずきん"];
 
-console.log(characters);
+// forEachメソッドを使って、配列charactersの中身をすべて出力してください
 
-// pushメソッドを使って配列charactersに、文字列「とりずきん」を追加してください
-characters.push("とりずきん");
-
-// 配列charactersを出力してください
-console.log(characters);
+characters.forEach((character) => {console.log(character);});
