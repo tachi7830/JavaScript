@@ -1,21 +1,15 @@
-const numbers = [1, 2, 3, 4];
+const printWanko = () => {
+  console.log("にんじゃわんこ");
+};
 
-// 定数numbersにmapメソッドを使って配列を作り、定数doubledNumbersに代入してください
-const doubledNumbers = numbers.map((number) => { return number * 2; });
+const printHitsuji = () => {
+  console.log("ひつじ仙人");
+};
 
-// 定数doubledNumbersを出力してください
-console.log(doubledNumbers);
+const call = (callback) => {
+  console.log("コールバック関数を呼び出します。");
+  callback();
+};
 
-
-const names = [
-  {firstName: "Kate", lastName: "Jones"},
-	{firstName: "John", lastName: "Smith"},
-	{firstName: "Denis", lastName: "Williams"},
-	{firstName: "David", lastName: "Black"}
-];
-
-// 定数namesにmapメソッドを使って新しい配列を作り、定数fullNamesに代入してください
-const fullNames = names.map((name) => { return name.firstName + name.lastName; });
-
-// 定数fullNamesを出力してください
-console.log(fullNames);
+// 引数をprintHitsujiに書き換えて出力を確認しましょう
+call(printHitsuji);
