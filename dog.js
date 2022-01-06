@@ -1,4 +1,3 @@
-// Animalクラスをインポートしてください
 import Animal from "./animal";
 
 class Dog extends Animal {
@@ -21,5 +20,4 @@ class Dog extends Animal {
   }
 }
 
-// Dogクラスをエクスポートしてください
 export default Dog;
