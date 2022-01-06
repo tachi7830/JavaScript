@@ -1,21 +1,21 @@
 const numbers = [1, 2, 3, 4];
 
-// filterメソッドを使ってnumbersから偶数を取り出し、定数evenNumbersに代入してください
-const evenNumbers = numbers.filter((number) => { return number % 2 === 0; });            
+// 定数numbersにmapメソッドを使って配列を作り、定数doubledNumbersに代入してください
+const doubledNumbers = numbers.map((number) => { return number * 2; });
+
+// 定数doubledNumbersを出力してください
+console.log(doubledNumbers);
 
 
-// evenNumbersを出力してください
-console.log(evenNumbers);
-
-
-const characters = [
-  {id: 1, name:"にんじゃわんこ", age: 14},
-  {id: 2, name:"ベイビーわんこ", age: 5},
-  {id: 3, name:"ひつじ仙人", age: 100}
+const names = [
+  {firstName: "Kate", lastName: "Jones"},
+	{firstName: "John", lastName: "Smith"},
+	{firstName: "Denis", lastName: "Williams"},
+	{firstName: "David", lastName: "Black"}
 ];
 
-// charactersから20歳未満のキャラクターを取り出し、定数underTwentyに代入してください
-const underTwenty = characters.filter((character) => { return character.age < 20; });
+// 定数namesにmapメソッドを使って新しい配列を作り、定数fullNamesに代入してください
+const fullNames = names.map((name) => { return name.firstName + name.lastName; });
 
-// underTwentyを出力してください
-console.log(underTwenty);
+// 定数fullNamesを出力してください
+console.log(fullNames);
