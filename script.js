@@ -1,15 +1,8 @@
-const printWanko = () => {
-  console.log("にんじゃわんこ");
-};
-
 const call = (callback) => {
-  console.log("コールバック関数を呼び出します。");
-  callback();
+  callback("にんじゃわんこ", 14);
 };
 
-call(printWanko);
-
-// 引数で関数を定義して渡してください
-call(() => {
-  console.log("ひつじ仙人");
+// 関数callの引数の中で2つの引数を取る関数を追加してください
+call((name,age) => {
+  console.log(`${name}は${age}歳です。`);
 });
