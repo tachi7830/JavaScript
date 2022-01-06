@@ -1,25 +1,21 @@
-const numbers = [1, 3, 5, 7, 9];
+const numbers = [1, 2, 3, 4];
 
-// findメソッドを使って配列numbersから3の倍数を見つけ、定数foundNumberに代入してください
-const foundNumber = numbers.find((number) => { 
-  return number % 3 === 0;
-});
+// filterメソッドを使ってnumbersから偶数を取り出し、定数evenNumbersに代入してください
+const evenNumbers = numbers.filter((number) => { return number % 2 === 0; });            
 
-// foundNumberを出力してください
-console.log(foundNumber);
+
+// evenNumbersを出力してください
+console.log(evenNumbers);
 
 
 const characters = [
-  {id: 1, name: "にんじゃわんこ", age: 6},
-  {id: 2, name: "ベイビーわんこ", age: 2},
-  {id: 3, name: "ひつじ仙人", age: 100},
-  {id: 4, name: "とりずきん", age: 21}
+  {id: 1, name:"にんじゃわんこ", age: 14},
+  {id: 2, name:"ベイビーわんこ", age: 5},
+  {id: 3, name:"ひつじ仙人", age: 100}
 ];
 
-// 定数charactersからidが3のオブジェクトを見つけ、定数foundCharacterに代入してください
-const foundCharacter = characters.find((character) => { 
-  return character.id === 3;
-});
+// charactersから20歳未満のキャラクターを取り出し、定数underTwentyに代入してください
+const underTwenty = characters.filter((character) => { return character.age < 20; });
 
-// foundCharacterを出力してください
-console.log(foundCharacter);
+// underTwentyを出力してください
+console.log(underTwenty);
