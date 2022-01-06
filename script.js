@@ -1,8 +1,9 @@
-// 以下を書き換えて、定数dog1, dog2をインポートしてください
-import {dog1,dog2} from "./dogData";
+const characters = ["にんじゃわんこ", "ベイビーわんこ", "ひつじ仙人"];
 
-// 定数dog1とdog2を出力するように左からコピーして書き換えてください
-console.log("---------");
-dog1.info();
-console.log("---------");
-dog2.info();
+console.log(characters);
+
+// pushメソッドを使って配列charactersに、文字列「とりずきん」を追加してください
+characters.push("とりずきん");
+
+// 配列charactersを出力してください
+console.log(characters);
