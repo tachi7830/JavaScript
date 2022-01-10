@@ -1,11 +1,15 @@
 $(function() {
-  // 「#change-text」要素に対するclickイベントを作成してください
-  $("#change-text").click(function(){
-    $("#text").text("ようこそ、Progateへ");
-  });
-  
-  // 「#change-html」要素に対するclickイベントを作成してください
-  $("#change-html").click(function(){
-    $("#text").html('<a href="https://prog-8.com/">ようこそ、Progateへ</a>');
+  $('.btn').click(function() {
+    // $('#title')を変数$titleに代入してください
+    var $title = $("#title");
+    
+    
+    // 「#title」に対する3つのメソッドを、変数を使って書き換えてください
+    $title.css('color', 'red');
+    $title.html('こんばんは、にんじゃわんこさん');
+    $title.fadeOut(1000);
+    
+    // 「#text」に対する3つのメソッドを、メソッドチェーンを使って書き換えてください
+    $('#text').css('color', 'blue').html('<h3>jQueryをマスターしましょう！</h3>').fadeOut(1000);
   });
 });
