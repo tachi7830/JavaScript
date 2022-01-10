@@ -1,20 +1,26 @@
 $(function() {
-  $('#login-show').click(function(){
+  
+  $('#login-show').click(function() {
     $('#login-modal').fadeIn();
   });
   
-  $('.signup-show').click(function(){
+  $('.signup-show').click(function() {
     $('#signup-modal').fadeIn();
   });
-  
-  // 「.close-modal」要素にclickイベントを設定してください
-  $(".close-modal").click(function(){
-    $("#login-modal").fadeOut();
+
+  $('.close-modal').click(function() {
+    $('#login-modal').fadeOut();
+    $('#signup-modal').fadeOut();
   });
   
-  $(".close-modal").click(function(){
-    $("#signup-modal").fadeOut();
-  });
-  
+  // 「.lesson-hover」がhoverされたときのhoverイベントを作成してください
+  $(".lesson-hover").hover(
+    function(){
+      
+    },
+    function(){
+      
+    }
+  );
 });
 
