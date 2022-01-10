@@ -1,8 +1,8 @@
 $(function() {
-  // slideUpメソッドを用いて、「#title」の要素を隠してください
-  $("#title").slideUp();
+  // showメソッドを用いて、「#title」要素を表示してください
+  $("#title").show();
   
-  // fadeOutメソッドを用いて、「.lesson-item」の要素を隠してください
-  $(".lesson-item").fadeOut();
+  // fadeInメソッドを用いて、「#image」要素を表示してください
+  $("#image").fadeIn();
   
 });
