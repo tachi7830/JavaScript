@@ -14,17 +14,25 @@
         <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
       </div>
       <div class="header-right">
-        <!-- 以下の<div>タグにlogin-showというidをつけてください -->
-        <div id="login-show" class="login">ログイン</div>
-        
+        <div class="login" id="login-show">ログイン</div>
       </div>
     </div>
   </header>
-  <div class="signup-modal-wrapper">
+  <!-- "signup-modal"というidをつけてください -->
+  <div class="signup-modal-wrapper" id="signup-modal">
+    <!-- 新規登録用のモーダル部分を表示してください -->
+    <div class="modal">
+      <div id="signup-form">
+        <h2>Emailで新規登録</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <div id="submit-btn">新規登録</div>
+        </form>
+      </div>
+    </div>
   </div>
-  <!-- 「login-modal」というidを追加してください -->
-  <div id="login-modal" class="login-modal-wrapper">
-    <!-- ログインのモーダル部分のHTMLを貼り付けてください -->
+  <div class="login-modal-wrapper" id="login-modal">
     <div class="modal">
       <div id="login-form">
         <h2>Emailログイン</h2>
@@ -40,7 +48,8 @@
     <div class="container">
       <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
       <p>progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn signup">新規登録はこちら</div>
+      <!-- "signup-show"というclassをつけてください -->
+      <div class="btn signup signup-show">新規登録はこちら</div>
       <p>or</p>
       <div class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</div>
       <div class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</div>
@@ -70,7 +79,9 @@
         <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
         <h3 id="tagline">Let's learn to code, learn to be creative!</h3>
       </div>
-      <div class="btn message">さっそく開発する</div>
+      <!-- "signup-show"というclassをつけてください -->
+      <div class="btn message signup-show">さっそく開発する</div>
+      
     </div>
   </div>
   <footer>

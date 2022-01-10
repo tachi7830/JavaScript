@@ -1,7 +1,11 @@
 $(function() {
-  // 「#login-show」要素に対するclickイベントを作成してください
-  $("#login-show").click(function(){
-    $("#login-modal").fadeIn();
+  $('#login-show').click(function() {
+    $('#login-modal').fadeIn();
+  });
+  
+  // 「.signup-show」のclickイベントを作成してください
+  $(".signup-show").click(function(){
+    $("#signup-modal").fadeIn();
   });
   
 });
