@@ -1,8 +1,7 @@
 $(function() {
-  // showメソッドを用いて、「#title」要素を表示してください
-  $("#title").show();
-  
-  // fadeInメソッドを用いて、「#image」要素を表示してください
-  $("#image").fadeIn();
+  // 「#hide-text」要素に対するclickイベントを作成してください
+  $("#hide-text").click(function(){
+    $("#text").slideUp();
+  })
   
 });
