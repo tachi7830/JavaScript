@@ -1,12 +1,4 @@
-$(function() {
-  // 「#language-wrapper」にhoverしたときのhoverイベントを作成してください
-  $("#language-wrapper").hover(
-    function(){
-      $(".language-text").fadeIn();
-    },
-    function(){
-      $(".language-text").fadeOut();
-    }
-  );
+// jQueryの型を用意してください
+$(function(){
   
 });
