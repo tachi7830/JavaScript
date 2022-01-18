@@ -29,5 +29,4 @@ $(function(){
       'scrollTop':position
     },500);
   });
-  
 });
