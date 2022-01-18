@@ -1,9 +1,24 @@
 $(function() {
-  $('#second-btn').click(function() {
-    // 「.active」要素からactiveクラスを取り除いてください
+  $('.index-btn').click(function() {
     $('.active').removeClass('active');
-    // 2つ目の「.slide」要素にactiveクラスをつけてください
-    $('.slide').eq(1).addClass('active');
+    var clickedIndex = $('.index-btn').index($(this));
+    $('.slide').eq(clickedIndex).addClass('active');
+  });
+  
+  $('.change-btn').click(function() {
+    // 変数$displaySlideを定義してください
+    var $displaySlide = $('.active');
+    
+    // 変数$displaySlideからactiveクラスを取り除いてください
+    $displaySlide.removeClass('active');
+    
+    // ifとelseを用いて、$displaySlideの前もしくは次の要素に
+    // activeクラスをつけてください
+    if ($(this).hasClass('next-btn')) {            
+      $displaySlide.next().addClass('active');            
+    } else {            
+      $displaySlide.prev().addClass('active');            
+     }
     
   });
 });
